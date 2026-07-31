@@ -60,7 +60,7 @@ body{
     line-height: 55px;
 }
 
-.a{
+a{
     color: #60a5fa;
     text-decoration: none;
     font-weight: bold;
@@ -68,4 +68,75 @@ body{
 }
 a:hover{
     color: #ffffff;
+}
+.skill-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.skill-card{
+    width: 220px;
+    padding: 20px;
+    background:#1e293b;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,.3);
+    transition: .3s;
+
+}
+.skill-card:hover{
+    transform: translateY(-8px);
+    box-shadow:0 10px 25px rgba(96,165,250,.5);
+
+}
+.skill-card h3{
+    color:#60a5fa;
+    margin-bottom:10px;
+
+}
+.skill-card p{
+    color:white;
+    font-size:20px;
+}
+.project-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.project-card{
+    width: 420px;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+    transition: .3s;
+
+}
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow:0 10px 30px rgba(96,165,250,.5);
+}
+.project-card h3{
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+.project-card p{
+    line-height:28px;
+    margin-bottom:20px;
+}
+.project-tech{
+    color:#c084fc;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.project-card a{
+    display: inline-block;
+    text-decoration: none;
+    color:#60a5fa;
+    font-weight: bold;
+}
+.project-card a:hover{
+    color: white;
 }
