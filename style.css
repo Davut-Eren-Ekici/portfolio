@@ -48,6 +48,7 @@ body{
 }
 
 .header{
+    margin-top: 40px;
          display: flex;
         flex-direction: column;
         align-items: center;
@@ -139,4 +140,62 @@ a:hover{
 }
 .project-card a:hover{
     color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    background-color:#111827;
+    z-index: 1000;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    transition: .3s;
+
+}
+.navbar a:hover{
+    color: #60a5fa;
+}
+.hero-text{
+    font-size: 24px;
+    color:#94a3b8;
+    margin-top: -20px;
+    margin-bottom: 30px;
+
+}
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+
+}
+.btn{
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+
+}
+.btn:hover{
+    background:#1d4ed8;
+    transform: scale(1.05);
+
+}
+.btn-secondary{
+    background:#374151;
+}
+.btn-secondary:hover{
+    background:#4b5563;
 }
