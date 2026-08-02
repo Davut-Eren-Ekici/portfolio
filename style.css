@@ -199,3 +199,50 @@ html{
 .btn-secondary:hover{
     background:#4b5563;
 }
+
+@media (max-width:768px){
+    h1{
+        font-size: 40px;
+    }
+    .renk2{
+        font-size: 30px;
+    }
+    .foto{
+        width: 180px;
+        height: 180px;
+    }
+    .renk{
+        width: 90%;
+        font-size: 20px;
+        padding: 20px;
+    }
+    .skills{
+        width: 90%;
+        font-size: 20px;
+    }
+    .navbar{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #111827;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        padding: 18px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .navbar::-webkit-scrollbar{
+        display: none;
+    }
+
+    .navbar a{
+        flex-shrink: 0;
+    }
+}
+.icon{
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 10px;
+}

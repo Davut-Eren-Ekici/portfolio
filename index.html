@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davut Eren Ekici | portföy</title>
-
+    
+   
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     
 </head>
 
@@ -48,7 +49,7 @@
 
         </header>
              <main>
-                 <section id="about">
+                 <section id="about" data-aos="fade-up">
                     <h2 class="hakkimda">Hakkımda </h2>
 
                    <p class="renk">Merhaba, ben Davut Eren Ekici.
@@ -57,48 +58,48 @@
                     Şu anda HTML, CSS ve Git öğreniyorum.
                     Yakın zamanda JavaScript, React ve Node.js öğrenerek Full Stack Developer olmayı hedefliyorum.</p> 
                   </section>
-                 <section  id="technologies">
+                 <section  iid="technologies" data-aos="fade-up">
 
                    <h2 class="hakkimda">Teknolojiler</h2>
 
                    <div class="skill-container">
 
-                        <div class="skill-card">
+                        <div class="skill-card" data-aos="flip-left">
                             <h3>🌐 HTML</h3>
                             <p>iyi</p>
                      </div>
-                     <div class="skill-card">
+                     <div class="skill-card" data-aos="flip-left">
                         <h3>🎨 CSS</h3>
                         <p>iyi</p>
                      </div>
-                     <div class="skill-card">
+                     <div class="skill-card" data-aos="flip-left">
                         <h3>💻 C# (Windows Forms)</h3>
                         <p>iyi</p>
                      </div>
-                      <div class="skill-card">
+                      <div class="skill-card" data-aos="flip-left">
                         <h3>🗄️ SQL</h3>
                         <p>iyi</p>
                        </div>
-                      <div class="skill-card">
+                      <div class="skill-card" data-aos="flip-left">
                         <h3>🌿 Git</h3>
                         <p>orta</p>
                       </div>
-                      <div class="skill-card"> 
+                      <div class="skill-card" data-aos="flip-left"> 
                         <h3>🐙 GitHub</h3>
                         <p>orta</p>
                      </div>
-                      <div class="skill-card">
+                      <div class="skill-card" data-aos="flip-left">
                         <h3>⚡ JavaScript</h3>
                         <p>Temel </p>
                       </div>
-                      <div class="skill-card">
+                      <div class="skill-card" data-aos="flip-left">
                         <h3>🐍 Python</h3>
                         <p>Temel</p>
                        </div>
                  </div>
             </section>
 
-            <section id="projects">
+            <section id="projects" data-aos="zoom-in">
                 <h2 class="hakkimda">Projeler</h2>
                  <div class="project-container">
                     <div class="project-card">
@@ -122,35 +123,31 @@
     </main>
 
 
-                 <footer id="contact">
+                 <footer id="contact" data-aos="fade-up">
                     <h2 class="hakkimda">İletişim</h2>
                     
-                    <p>📧
-                        
-                        <a href="mailto:davuteren052@gmail.com">
-                            
-                             davuteren052@gmail.com
-                        </a>
-                    </p>
+                    <a href="mailto:davuteren052@gmail.com">
+                        <img src="images/gmail.png" class="icon" alt="gmail">
+                        davuteren052@gmail.com
+                    </a>
 
-                    <p>🐙 GitHub:
-                        <a href="https://github.com/Davut-Eren-Ekici" target="_blank">
-                        Davut-Eren-Ekici
-                        </a>
-                    </p>
-                   
-                    <p>💼
-                        <a href="https://www.linkedin.com/in/eren-ekici-6808203b1/" target="_blank"  rel="noopener noreferrer">
-                        
+                    <a href="https://github.com/Davut-Eren-Ekici" target="_blank">
+                        <img src="images/github.png" class="icon" alt="GitHub">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/eren-ekici-6808203b1/" target="_blank">
+                        <img src="images/linkedin.png" class="icon" alt="LinkedIn">
                         LinkedIn
-                        </a>
-                         
-                        
-                    </p>
+                    </a>
                         <p>© 2026 Davut Eren Ekici</p>
                  </footer>
-   
-    
+                <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+                 <script>
+                   AOS.init({
+                      duration: 1000,
+                      once: true
+                    });
+                 </script>
     
     
 
