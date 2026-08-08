@@ -6,7 +6,7 @@ Bu proje, web geliştirme alanındaki bilgilerimi, öğrendiğim teknolojileri v
 
 ## 🌐 Canlı Demo
 
-[Portföyümü Görüntüle](https://github.com/Davut-Eren-Ekici/portfolio)
+[Portföyümü Görüntüle](http://127.0.0.1:5500/index.html)
 
 ## 🚀 Özellikler
 
