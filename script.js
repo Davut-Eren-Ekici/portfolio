@@ -1,12 +1,12 @@
 const baslik = document.querySelector("h1");
-baslik.style.color="#60a5fa";
-baslik.style.fontSize="80px";
+baslik.style.color = "#60a5fa";
+baslik.style.fontSize = "80px";
 
 const heroText = document.querySelector(".hero-text");
 const buton = document.querySelector(".btn");
 const modal = document.querySelector(".modal");
 const htmlCart = document.querySelector("#html-card");
-const closeButton= document.querySelector(".close");
+const closeButton = document.querySelector(".close");
 const modalTitle = document.querySelector("#modal-title");
 const modalText = document.querySelector("#modal-text");
 const cssCard = document.querySelector("#css-card");
@@ -14,52 +14,52 @@ const Csharp = document.querySelector("#C-sharp-Card");
 const javascript = document.querySelector("#JavaScript-Card");
 const Sql = document.querySelector("#Sql-Card");
 const pythonCard = document.querySelector("#Python-Card");
-const GitHubCard= document.querySelector("#GitHub-Card");
+const GitHubCard = document.querySelector("#GitHub-Card");
 const GitCard = document.querySelector("#Git-Card");
 
 
 
-let yesilmi=false;
+let yesilmi = false;
 
-function modalAc(baslik,aciklama){
-  modalTitle.textContent=baslik;
-  modalText.innerHTML=aciklama;
-  modal.style.display="flex";
+function modalAc(baslik, aciklama) {
+  modalTitle.textContent = baslik;
+  modalText.innerHTML = aciklama;
+  modal.style.display = "flex";
 }
 
 
-function RenkDeğistir(){
-   
-        
-        if(yesilmi){
-        buton.style.backgroundColor ="#2563eb";
-        yesilmi=false;
-        
-         
-         heroText.textContent =("Future Full Stack Developer 🚀 ")
-         
-        
-  
+function RenkDeğistir() {
 
-    } 
-    else {
-        buton.style.backgroundColor="pink"
-        yesilmi=true;
-      
-      heroText.textContent =("Davut Eren Ekici")
-       
-    }
+
+  if (yesilmi) {
+    buton.style.backgroundColor = "#2563eb";
+    yesilmi = false;
+
+
+    heroText.textContent = ("Future Full Stack Developer 🚀 ")
+
+
+
+
+  }
+  else {
+    buton.style.backgroundColor = "pink"
+    yesilmi = true;
+
+    heroText.textContent = ("Davut Eren Ekici")
+
+  }
 };
 
 buton.addEventListener("click", RenkDeğistir);
 
 
 
-htmlCart.addEventListener("click", function (){
- 
+htmlCart.addEventListener("click", function () {
+
   modalAc(
-       "🌐 HTML",
-        `<strong>Seviye:</strong> İyi
+    "🌐 HTML",
+    `<strong>Seviye:</strong> İyi
 
     <ul>
         <li>Semantik HTML</li>
@@ -67,21 +67,21 @@ htmlCart.addEventListener("click", function (){
         <li>Tablolar</li>
         <li>Responsive Tasarım</li>
         <li>SEO Temelleri</li>
-    </ul>` 
-    );  
-  
-  
+    </ul>`
+  );
+
+
 
 
 });
-closeButton.addEventListener("click" ,function(){
-  modal.style.display= "none";
+closeButton.addEventListener("click", function () {
+  modal.style.display = "none";
 });
 
-cssCard.addEventListener("click", function(){
+cssCard.addEventListener("click", function () {
   modalAc(
-       "🎨 CSS",
-       `<strong>Seviye:</strong> İyi
+    "🎨 CSS",
+    `<strong>Seviye:</strong> İyi
   <ul>
     <li>Flexbox</li>
     <li>Grid Sistemi</li>
@@ -90,10 +90,10 @@ cssCard.addEventListener("click", function(){
     <li>Geçiş Efektleri (Transitions)</li>
 </ul>`
   );
-  
+
 });
 
-Csharp.addEventListener("click", function(){
+Csharp.addEventListener("click", function () {
   modalAc(
     "💜 C#",
     `
@@ -109,12 +109,12 @@ Csharp.addEventListener("click", function(){
     `
 
   );
-  
+
 });
 
-javascript.addEventListener("click", function(){
+javascript.addEventListener("click", function () {
   modalAc(
-   "⚡ JavaScript",
+    "⚡ JavaScript",
     `
     <strong>Seviye:</strong> Temel
 
@@ -129,7 +129,7 @@ javascript.addEventListener("click", function(){
   );
 });
 
-Sql.addEventListener("click", function(){
+Sql.addEventListener("click", function () {
   modalAc(
     "🗄️ SQL Server",
     `
@@ -147,9 +147,9 @@ Sql.addEventListener("click", function(){
   );
 });
 
-pythonCard.addEventListener("click", function(){
+pythonCard.addEventListener("click", function () {
   modalAc(
-   "🐍 Python",
+    "🐍 Python",
     `
     <strong>Seviye:</strong> Temel
 
@@ -165,7 +165,7 @@ pythonCard.addEventListener("click", function(){
   );
 });
 
-GitHubCard.addEventListener("click", function(){
+GitHubCard.addEventListener("click", function () {
   modalAc(
     "🐙 GitHub",
     `
@@ -182,7 +182,7 @@ GitHubCard.addEventListener("click", function(){
   );
 });
 
-GitCard.addEventListener("click", function(){
+GitCard.addEventListener("click", function () {
   modalAc(
     "🌿 Git",
     `
