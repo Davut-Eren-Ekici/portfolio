@@ -317,6 +317,73 @@ html {
         display: none;
     }
 
+    /* 📱 MOBİL PROJE TASARIMI */
+@media (max-width: 768px) {
+
+    .projects {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* Projeleri yatay kaydırılabilir yap */
+    .project-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 20px;
+
+        padding: 10px 20px 25px;
+
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Kaydırma çubuğunu gizle */
+    .project-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .project-container {
+        scrollbar-width: none;
+    }
+
+    /* Proje kartları */
+    .project-card {
+        flex: 0 0 85%;
+        max-width: 85%;
+        min-width: 85%;
+
+        padding: 25px 20px;
+        box-sizing: border-box;
+
+        scroll-snap-align: center;
+    }
+
+    .project-card h3 {
+        font-size: 21px;
+        margin-bottom: 12px;
+    }
+
+    .project-card p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .project-tech {
+        font-size: 13px;
+        line-height: 1.5;
+        margin: 15px 0;
+    }
+
+    .project-card a {
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
 
 }
 
