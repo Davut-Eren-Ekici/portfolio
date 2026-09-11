@@ -350,7 +350,7 @@ html {
 
 
     /* PROJE KARTI */
-    .project-card {
+    .project-container {
         flex: 0 0 calc(100vw - 40px);
 
         width: calc(100vw - 40px);
@@ -365,23 +365,23 @@ html {
     }
 
 
-    .project-card h3 {
+    .project-container h3 {
         font-size: 21px;
         margin-bottom: 12px;
     }
 
-    .project-card p {
+    .project-container p {
         font-size: 15px;
         line-height: 1.6;
     }
 
-    .project-tech {
+    .project-container {
         font-size: 13px;
         line-height: 1.5;
         margin: 15px 0;
     }
 
-    .project-card a {
+    .project-container a {
         display: block;
         margin-top: 10px;
         padding: 10px;
