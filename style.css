@@ -268,7 +268,8 @@ html {
     background: #4b5563;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
+
     h1 {
         font-size: 40px;
     }
@@ -293,21 +294,22 @@ html {
         font-size: 20px;
     }
 
+    /* NAVBAR */
     .navbar {
-
         position: sticky;
         top: 0;
         z-index: 1000;
         background-color: #111827;
+
         display: flex;
         justify-content: flex-start;
         gap: 35px;
-        padding: 18px;
+
+        padding: 18px 20px;
+
         overflow-x: auto;
         white-space: nowrap;
-
     }
-
 
     .navbar a {
         flex-shrink: 0;
@@ -317,48 +319,51 @@ html {
         display: none;
     }
 
-    /* 📱 MOBİL PROJE TASARIMI */
-@media (max-width: 768px) {
 
+    /*  PROJELER */
     .projects {
         width: 100%;
         overflow: hidden;
     }
 
-    /* Projeleri yatay kaydırılabilir yap */
     .project-container {
         display: flex;
         flex-wrap: nowrap;
+
         overflow-x: auto;
         overflow-y: hidden;
-        gap: 20px;
 
+        gap: 16px;
+
+        /* İlk kartın tamamen görünmesini sağlar */
         padding: 10px 20px 25px;
 
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
     }
 
-    /* Kaydırma çubuğunu gizle */
     .project-container::-webkit-scrollbar {
         display: none;
     }
 
-    .project-container {
-        scrollbar-width: none;
-    }
 
-    /* Proje kartları */
+    /* PROJE KARTI */
     .project-card {
-        flex: 0 0 85%;
-        max-width: 85%;
-        min-width: 85%;
+        flex: 0 0 calc(100vw - 40px);
 
-        padding: 25px 20px;
+        width: calc(100vw - 40px);
+        min-width: calc(100vw - 40px);
+        max-width: calc(100vw - 40px);
+
         box-sizing: border-box;
 
-        scroll-snap-align: center;
+        padding: 25px 20px;
+
+        scroll-snap-align: start;
     }
+
 
     .project-card h3 {
         font-size: 21px;
@@ -385,7 +390,7 @@ html {
 }
 
 
-}
+
 
 .icon {
     width: 28px;
