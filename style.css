@@ -270,12 +270,18 @@ html {
 
 @media (max-width: 768px) {
 
+    /* =========================
+       GENEL MOBİL AYARLAR
+       ========================= */
+
     h1 {
         font-size: 40px;
+        text-align: center;
     }
 
     .renk2 {
         font-size: 30px;
+        text-align: center;
     }
 
     .foto {
@@ -287,56 +293,89 @@ html {
         width: 90%;
         font-size: 20px;
         padding: 20px;
+        box-sizing: border-box;
     }
 
     .skills {
         width: 90%;
         font-size: 20px;
+        box-sizing: border-box;
     }
 
-    /* NAVBAR */
+
+    /* =========================
+       NAVBAR
+       ========================= */
+
     .navbar {
         position: sticky;
         top: 0;
         z-index: 1000;
+
+        width: 100%;
+        box-sizing: border-box;
+
         background-color: #111827;
 
         display: flex;
         justify-content: flex-start;
-        gap: 35px;
+        align-items: center;
+
+        gap: 30px;
 
         padding: 18px 20px;
 
         overflow-x: auto;
         white-space: nowrap;
-    }
 
-    .navbar a {
-        flex-shrink: 0;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
     }
 
     .navbar::-webkit-scrollbar {
         display: none;
     }
 
+    .navbar a {
+        flex-shrink: 0;
+    }
 
-    /*  PROJELER */
-    .projects {
+
+    /* =========================
+       PROJELER
+       ========================= */
+
+    #projects {
         width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
         overflow: hidden;
     }
 
+    #projects .hakkimda {
+        text-align: center;
+    }
+
+
+    /* Projelerin yatay kaydırma alanı */
+
     .project-container {
+        width: 100%;
+        max-width: 100%;
+
         display: flex;
+        flex-direction: row;
         flex-wrap: nowrap;
+
+        gap: 20px;
 
         overflow-x: auto;
         overflow-y: hidden;
 
-        gap: 16px;
+        box-sizing: border-box;
 
-        /* İlk kartın tamamen görünmesini sağlar */
-        padding: 10px 20px 25px;
+        padding: 10px 20px 30px;
 
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
@@ -348,9 +387,11 @@ html {
         display: none;
     }
 
+    /* 
+    PROJE KARTLARI
+    */
 
-    /* PROJE KARTI */
-    .project-container {
+    .project-card {
         flex: 0 0 calc(100vw - 40px);
 
         width: calc(100vw - 40px);
@@ -361,34 +402,107 @@ html {
 
         padding: 25px 20px;
 
-        scroll-snap-align: start;
+        scroll-snap-align: center;
+
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 
 
-    .project-container h3 {
+    /* Başlık */
+
+    .project-card h3 {
         font-size: 21px;
-        margin-bottom: 12px;
+        line-height: 1.3;
+
+        margin-bottom: 15px;
+
+        word-break: normal;
     }
 
-    .project-container p {
+
+    /* Açıklama */
+
+    .project-card p {
         font-size: 15px;
         line-height: 1.6;
+
+        margin-bottom: 15px;
     }
 
-    .project-container {
+
+    /* Teknolojiler */
+
+    .project-tech {
         font-size: 13px;
-        line-height: 1.5;
+        line-height: 1.6;
+
         margin: 15px 0;
+
+        overflow-wrap: break-word;
     }
 
-    .project-container a {
+
+    /* Butonlar / Linkler */
+
+    .project-card a {
         display: block;
+
+        width: 100%;
+
+        box-sizing: border-box;
+
         margin-top: 10px;
-        padding: 10px;
+
+        padding: 11px;
+
         text-align: center;
     }
-}
 
+
+    /* =========================
+       KÜÇÜK TELEFONLAR
+       ========================= */
+
+    @media (max-width: 400px) {
+
+        h1 {
+            font-size: 34px;
+        }
+
+        .renk2 {
+            font-size: 26px;
+        }
+
+        .foto {
+            width: 150px;
+            height: 150px;
+        }
+
+        .project-card {
+            flex: 0 0 calc(100vw - 30px);
+
+            width: calc(100vw - 30px);
+            min-width: calc(100vw - 30px);
+            max-width: calc(100vw - 30px);
+
+            padding: 20px 16px;
+        }
+
+        .project-card h3 {
+            font-size: 19px;
+        }
+
+        .project-card p {
+            font-size: 14px;
+        }
+
+        .project-tech {
+            font-size: 12px;
+        }
+    }
+
+}
 
 
 
