@@ -16,7 +16,7 @@ const Sql = document.querySelector("#Sql-Card");
 const pythonCard = document.querySelector("#Python-Card");
 const GitHubCard = document.querySelector("#GitHub-Card");
 const GitCard = document.querySelector("#Git-Card");
-
+const JavaCard = document.querySelector("#Java-Card");
 
 
 let yesilmi = false;
@@ -116,7 +116,7 @@ javascript.addEventListener("click", function () {
   modalAc(
     "⚡ JavaScript",
     `
-    <strong>Seviye:</strong> Temel
+    <strong>Seviye:</strong> Öğreniyorum
 
     <ul>
         <li>Değişkenler (let, const)</li>
@@ -151,7 +151,7 @@ pythonCard.addEventListener("click", function () {
   modalAc(
     "🐍 Python",
     `
-    <strong>Seviye:</strong> Temel
+    <strong>Seviye:</strong> Öğreniyorum
 
     <ul>
         <li>Değişkenler</li>
@@ -195,6 +195,24 @@ GitCard.addEventListener("click", function () {
         <li>git status</li>
         <li>git push</li>
         <li>git config</li>
+    </ul>
+    `
+  );
+});
+
+JavaCard.addEventListener("click", function(){
+  modalAc(
+    "🌿 Git",
+    `
+    <strong>Seviye:</strong> Öğreniyorum
+
+    <ul>
+        <li>For/While</li>
+        <li>Diziler(Arrays)</li>
+        <li>Koşullar (if-else)</li>
+        <li>Veri Tipleri</li>
+        <li></li>
+        <li></li>
     </ul>
     `
   );
