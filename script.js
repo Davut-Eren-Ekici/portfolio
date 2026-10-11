@@ -70,6 +70,7 @@ htmlCart.addEventListener("click", function () {
     </ul>`
   );
 
+  
 
 
 
