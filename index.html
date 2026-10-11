@@ -4,444 +4,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davut Eren Ekici | portföy</title>
+    <meta name="description" content="Davut Eren Ekici - Bilişim Teknolojileri öğrencisi. Web arayüzleri ve Node.js ile yapay zekâ destekli uygulamalar geliştiriyor.">
+    <title>Davut Eren Ekici | Portföy</title>
 
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar">
+    <a class="skip-link" href="#main">İçeriğe geç</a>
 
+    <nav class="navbar" aria-label="Ana menü">
         <a href="#about">Hakkımda</a>
         <a href="#technologies">Teknolojiler</a>
         <a href="#projects">Projeler</a>
         <a href="#contact">İletişim</a>
-
     </nav>
 
-    <header class="header">
+    <header class="hero">
+        <img class="hero-photo" src="profie.jpg" alt="Davut Eren Ekici" width="200" height="200">
 
-        <img class="foto" src="profie.jpg" alt="Davut Eren Ekici ">
-
-        <h1> Davut Eren Ekici </h1>
-
-        <h2 class="renk2">Software Developer Student</h2>
-
-        <p class="hero-text">
-            Future Full Stack Developer 🚀
-        </p>
+        <h1>Davut Eren Ekici</h1>
+        <p class="hero-role">Bilişim Teknolojileri öğrencisi · Full stack geliştirici adayı</p>
+        <p class="hero-text">Web arayüzleri ve Gemini API ile çalışan uygulamalar geliştiriyorum.</p>
 
         <div class="hero-buttons">
-            <a href="#contact" class="btn">
-                📧 Bana Ulaş
-            </a>
-
-            <a href="https://github.com/Davut-Eren-Ekici" target="_blank" rel="noopener" class="btn btn-secondary">
-
-                🐙 GitHub
-            </a>
+            <a href="#contact" class="btn">Bana ulaş</a>
+            <a href="https://github.com/Davut-Eren-Ekici" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
         </div>
-
     </header>
-    <main>
-        <section id="about" data-aos="fade-up">
-            <h2 class="hakkimda">Hakkımda </h2>
 
-            <p class="renk">Merhaba! Ben Davut Eren Ekici.
-
-                Mesleki ve Teknik Anadolu Lisesi Bilişim Teknolojileri alanında öğrenim gören bir öğrenciyim. Yazılım
-                geliştirme ve özellikle Full Stack Development alanında kendimi sürekli geliştirmeye odaklanıyorum.
-                Şu anda HTML, CSS, Git ve GitHub konularında çalışıyor, JavaScript öğrenme sürecime devam ediyorum. Uzun
-                vadede React, Node.js ve modern web teknolojilerini öğrenerek profesyonel bir Full Stack Developer
-                olmayı hedefliyorum.
-                Yeni teknolojiler öğrenmeyi, projeler üretmeyi ve her gün bir önceki günden daha iyi bir yazılımcı
-                olmayı amaçlıyorum..</p>
-        </section>
-        <section id="technologies" data-aos="fade-up">
-
-            <h2 class="hakkimda">Teknolojiler</h2>
-
-            <div class="skill-container">
-
-                <div class="skill-card" id="html-card" data-aos="flip-left">
-                    <h3>
-                        <img src="images/html5.svg" class="skill-logo" alt="html Logo">
-                        HTML
-                    </h3>
-                    <p>iyi</p>
-                </div>
-                <div class="skill-card" id="css-card" data-aos="flip-left">
-                    <h3>
-                        <img src="images/css3-.svg" class="skill-logo" alt="Css Logo">
-                        CSS
-                    </h3>
-                    <p>iyi</p>
-                </div>
-                <div class="skill-card" id="C-sharp-Card" data-aos="flip-left">
-                    <h3>
-                        <img src="images/csharp.svg" class="skill-logo" alt="C# Logo">
-                        C#
-                    </h3>
-                    <p>iyi</p>
-                </div>
-                <div class="skill-card" id="Sql-Card" data-aos="flip-left">
-                    <h3>
-                        <img src="images/SQL.svg" class="skill-logo" alt="SQL Logo">
-                        SQL Server
-                    </h3>
-
-                    <p>iyi</p>
-
-                </div>
-                <div class="skill-card" id="Git-Card" data-aos="flip-left">
-                    <h3>
-                        <img src="images/git.svg" class="skill-logo" alt="Git Logo">
-                        Git
-                    </h3>
-                    <p>orta</p>
-                </div>
-                <div class="skill-card" id="GitHub-Card" data-aos="flip-left">
-                    <h3>
-                        <img src="images/github.svg" class="skill-logo" alt="GitHub Logo">
-                        GitHub
-                    </h3>
-                    <p>orta</p>
-                </div>
-                <div class="skill-card" id="JavaScript-Card" data-aos="flip-left">
-                    <h3>
-                        <img src="images/javascript.svg" class="skill-logo" alt="JavaScript Logo">
-                        JavaScript
-                    </h3>
-                    <p>Öğreniyorum </p>
-                </div>
-                <div class="skill-card" id="Python-Card" data-aos="flip-left">
-                    <h3>
-                        <img src="images/python.svg" class="skill-logo" alt="python Logo">
-                        Python
-                    </h3>
-                    <p>Öğreniyorum</p>
-                </div>
-                <div class="skill-card" id="Java-Card" data-aos="flip-left">
-                    <h3>
-                        <img src="images/java.png" class="skill-logo" alt="Java Logo">
-                        Java
-                    </h3>
-                    <p>Öğreniyorum</p>
-                </div>
+    <main id="main">
+        <section id="about" class="section" data-aos="fade-up">
+            <h2 class="section-title">Hakkımda</h2>
+            <p class="about-text">
+                Mesleki ve Teknik Anadolu Lisesi Bilişim Teknolojileri alanında okuyorum. Web tarafında HTML, CSS ve
+                JavaScript ile arayüz yazıyor, Node.js ve Express ile Gemini API'yi kullanan uygulamalar geliştiriyorum.
+                Three.js ile interaktif 3D denemeler de yapıyorum.
+            </p>
+            <p class="about-text">
+                Hedefim React ve modern web teknolojilerini öğrenerek profesyonel bir full stack geliştirici olmak.
+            </p>
         </section>
 
+        <section id="technologies" class="section" data-aos="fade-up">
+            <h2 class="section-title">Teknolojiler</h2>
+            <p class="section-note">Ayrıntı için bir karta tıkla.</p>
 
-        <h2 class="hakkimda">Projeler</h2>
-        <div class="project-container">
-            <section id="projects" data-aos="zoom-in">
-                <div class="project-card">
-                    <h3>💖 Crystal Animated Heart</h3>
+            <div class="skill-grid">
+                <button type="button" class="skill" data-skill="html">
+                    <img src="images/html5.svg" alt="" class="skill-logo" width="40" height="40">
+                    <span class="skill-name">HTML</span>
+                    <span class="skill-level">İyi</span>
+                </button>
+                <button type="button" class="skill" data-skill="css">
+                    <img src="images/css3-.svg" alt="" class="skill-logo" width="40" height="40">
+                    <span class="skill-name">CSS</span>
+                    <span class="skill-level">İyi</span>
+                </button>
+                <button type="button" class="skill" data-skill="javascript">
+                    <img src="images/javascript.svg" alt="" class="skill-logo" width="40" height="40">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-level">Öğreniyorum</span>
+                </button>
+                <button type="button" class="skill" data-skill="csharp">
+                    <img src="images/csharp.svg" alt="" class="skill-logo" width="40" height="40">
+                    <span class="skill-name">C#</span>
+                    <span class="skill-level">İyi</span>
+                </button>
+                <button type="button" class="skill" data-skill="sql">
+                    <img src="images/SQL.svg" alt="" class="skill-logo" width="40" height="40">
+                    <span class="skill-name">SQL Server</span>
+                    <span class="skill-level">İyi</span>
+                </button>
+                <button type="button" class="skill" data-skill="java">
+                    <img src="images/java.png" alt="" class="skill-logo" width="40" height="40">
+                    <span class="skill-name">Java</span>
+                    <span class="skill-level">Öğreniyorum</span>
+                </button>
+                <button type="button" class="skill" data-skill="python">
+                    <img src="images/python.svg" alt="" class="skill-logo" width="40" height="40">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-level">Öğreniyorum</span>
+                </button>
+                <button type="button" class="skill" data-skill="git">
+                    <img src="images/git.svg" alt="" class="skill-logo" width="40" height="40">
+                    <span class="skill-name">Git</span>
+                    <span class="skill-level">Orta</span>
+                </button>
+                <button type="button" class="skill" data-skill="github">
+                    <img src="images/github.svg" alt="" class="skill-logo" width="40" height="40">
+                    <span class="skill-name">GitHub</span>
+                    <span class="skill-level">Orta</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="projects" class="section" data-aos="fade-up">
+            <h2 class="section-title">Projeler</h2>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Crystal Animated Heart</h3>
                     <p>
-                        Three.js, özel GLSL shader'lar ve Web Audio API
-                        kullanılarak geliştirilmiş, müzik ritmine tepki veren
-                        interaktif 3D kristal kalp animasyonu.
+                        Müziğin ritmine tepki veren interaktif 3D kristal kalp animasyonu. Three.js, özel GLSL
+                        shader'ları ve Web Audio API ile yazıldı.
                     </p>
-
-                    <div class="project-tech">
-                        Three.js • GLSL • GSAP • Web Audio API
+                    <p class="project-tech">Three.js · GLSL · GSAP · Web Audio API</p>
+                    <div class="project-links">
+                        <a href="https://davut-eren-ekici.github.io/Animated-heart/" target="_blank" rel="noopener">Canlı demo →</a>
+                        <a href="https://github.com/Davut-Eren-Ekici/Animated-heart" target="_blank" rel="noopener">Kaynak kod →</a>
                     </div>
+                </article>
 
-                    <a href="https://davut-eren-ekici.github.io/Animated-heart/" target="_blank" rel="noopener">
-                        🌐 Canlı Demo →
-                    </a>
-
-                    <a href="https://github.com/Davut-Eren-Ekici/Animated-heart" target="_blank" rel="noopener">
-                        🐙 GitHub Repository →
-                    </a>
-                </div>
-
-
-
-
-                <!-- 2. AI Note Master -->
-                <div class="project-card">
-                    <h3>🚀 AI Note Master</h3>
-
+                <article class="project-card">
+                    <h3>AI Note Master</h3>
                     <p>
-                        Gemini API kullanarak ders notlarını özetleyen,
-                        çalışma kartları oluşturan ve soru bankası hazırlayan
-                        full-stack EdTech uygulaması.
+                        Ders notlarını Gemini API ile özetleyen, çalışma kartları ve soru bankası oluşturan
+                        full stack eğitim uygulaması.
                     </p>
-
-                    <div class="project-tech">
-                        HTML • CSS • JavaScript • Node.js • Express.js • Gemini AI
+                    <p class="project-tech">HTML · CSS · JavaScript · Node.js · Express.js · Gemini AI</p>
+                    <div class="project-links">
+                        <a href="https://davut-eren-ekici.github.io/AI-Note-Master/" target="_blank" rel="noopener">Canlı demo →</a>
+                        <a href="https://github.com/Davut-Eren-Ekici/AI-Note-Master" target="_blank" rel="noopener">Kaynak kod →</a>
                     </div>
+                </article>
 
-                    <a href="https://davut-eren-ekici.github.io/AI-Note-Master/" target="_blank" rel="noopener">
-                        🌐 Canlı Demo →
-                    </a>
-
-                    <a href="https://github.com/Davut-Eren-Ekici/AI-Note-Master" target="_blank" rel="noopener">
-                        🐙 GitHub Repository →
-                    </a>
-                </div>
-
-
-                <!-- 3. AI Quiz Generator -->
-                <div class="project-card">
-                    <h3>🤖 AI Quiz Generator</h3>
-
+                <article class="project-card">
+                    <h3>AI Quiz Generator</h3>
                     <p>
-                        Google Gemini AI kullanarak kullanıcının belirlediği
-                        konu, soru sayısı ve zorluk seviyesine göre dinamik
-                        test soruları üreten full-stack web uygulaması.
+                        Konu, soru sayısı ve zorluk seviyesine göre Gemini AI ile dinamik test soruları üreten
+                        full stack web uygulaması.
                     </p>
-
-                    <div class="project-tech">
-                        HTML • CSS • JavaScript • Node.js • Express.js • Gemini AI
+                    <p class="project-tech">HTML · CSS · JavaScript · Node.js · Express.js · Gemini AI</p>
+                    <div class="project-links">
+                        <a href="https://imaginative-faloodeh-440358.netlify.app/" target="_blank" rel="noopener">Canlı demo →</a>
+                        <a href="https://github.com/Davut-Eren-Ekici/AI-Quiz" target="_blank" rel="noopener">Kaynak kod →</a>
                     </div>
+                </article>
 
-                    <a href="https://imaginative-faloodeh-440358.netlify.app/" target="_blank" rel="noopener">
-                        🌐 Canlı Demo →
-                    </a>
-
-                    <a href="https://github.com/Davut-Eren-Ekici/AI-Quiz" target="_blank" rel="noopener">
-                        🐙 GitHub Repository →
-                    </a>
-                </div>
-
-
-                <!-- 4. To-Do List -->
-                <div class="project-card">
-                    <h3>📝 To-Do List</h3>
-
+                <article class="project-card">
+                    <h3>Patron Asistanı</h3>
                     <p>
-                        HTML, CSS ve JavaScript kullanılarak geliştirilmiş;
-                        görev ekleme, tamamlama, silme, arama ve filtreleme
-                        özelliklerine sahip modern görev yönetim uygulaması.
+                        Günü saat bazlı planlamanı ve görevleri öncelik sırasına göre düzenlemeni sağlayan,
+                        karanlık temalı günlük planlayıcı. Veriler tarayıcıda saklanır.
                     </p>
-
-                    <div class="project-tech">
-                        HTML • CSS • JavaScript • Local Storage
+                    <p class="project-tech">HTML · CSS · JavaScript · localStorage</p>
+                    <div class="project-links">
+                        <a href="https://davut-eren-ekici.github.io/PatronAsistani/" target="_blank" rel="noopener">Canlı demo →</a>
+                        <a href="https://github.com/Davut-Eren-Ekici/PatronAsistani" target="_blank" rel="noopener">Kaynak kod →</a>
                     </div>
+                </article>
+            </div>
 
-                    <a href="https://davut-eren-ekici.github.io/To-Do-List/" target="_blank" rel="noopener">
-                        🌐 Canlı Demo →
-                    </a>
-
-                    <a href="https://github.com/Davut-Eren-Ekici/To-Do-List" target="_blank" rel="noopener">
-                        🐙 GitHub Repository →
-                    </a>
-                </div>
-
-
-                <!-- 5. Counter App -->
-                <div class="project-card">
-                    <h3>🔢 Counter App</h3>
-
-                    <p>
-                        JavaScript öğrenme sürecimde geliştirdiğim ilk
-                        uygulamalardan biri. Sayaç artırma, azaltma, sıfırlama
-                        ve veriyi Local Storage ile kaydetme özelliklerine sahip.
-                    </p>
-
-                    <div class="project-tech">
-                        HTML • CSS • JavaScript • Local Storage
+            <h3 class="subsection-title">Diğer web çalışmaları</h3>
+            <ul class="other-list">
+                <li class="other-item">
+                    <div>
+                        <h4>To-Do List</h4>
+                        <p>Görev ekleme, tamamlama, silme, arama ve filtreleme özellikli görev yöneticisi.</p>
+                        <p class="project-tech">HTML · CSS · JavaScript · localStorage</p>
                     </div>
-
-                    <a href="https://davut-eren-ekici.github.io/Counter-app/" target="_blank" rel="noopener">
-                        🌐 Canlı Demo →
-                    </a>
-
-                    <a href="https://github.com/Davut-Eren-Ekici/Counter-app" target="_blank" rel="noopener">
-                        🐙 GitHub Repository →
-                    </a>
-                </div>
-
-
-                <!-- 6. Portfolio Website -->
-                <div class="project-card">
-                    <h3>🌐 Portfolio Website</h3>
-
-                    <p>
-                        Kendimi, öğrendiğim teknolojileri ve geliştirdiğim
-                        projeleri sergilemek için HTML, CSS ve JavaScript
-                        kullanarak geliştirdiğim kişisel portföy web sitesi.
-                    </p>
-
-                    <div class="project-tech">
-                        HTML • CSS • JavaScript • Git • GitHub • AOS
+                    <div class="project-links">
+                        <a href="https://davut-eren-ekici.github.io/To-Do-List/" target="_blank" rel="noopener">Canlı demo →</a>
+                        <a href="https://github.com/Davut-Eren-Ekici/To-Do-List" target="_blank" rel="noopener">Kaynak kod →</a>
                     </div>
-
-                    <a href="https://davut-eren-ekici.github.io/portfolio/" target="_blank" rel="noopener">
-                        🌐 Canlı Demo →
-                    </a>
-
-                    <a href="https://github.com/Davut-Eren-Ekici/portfolio" target="_blank" rel="noopener">
-                        🐙 GitHub Repository →
-                    </a>
-                </div>
-                <!-- ATM Banka Similasyonu -->
-                <div class="project-card">
-                    <h3>🌐 ATM Banka Similasyonu</h3>
-
-                    <p>
-                        Kendimi, öğrendiğim teknolojileri ve geliştirdiğim
-                        projeleri sergilemek için Java Dilini
-                        kullanarak geliştirdiğim ATM Banka Uyulaması
-                    </p>
-
-                    <div class="project-tech">
-                        Java• Git • GitHub
+                </li>
+                <li class="other-item">
+                    <div>
+                        <h4>Counter App</h4>
+                        <p>JavaScript öğrenirken yaptığım ilk uygulamalardan biri: artır, azalt, sıfırla ve değeri tarayıcıda sakla.</p>
+                        <p class="project-tech">HTML · CSS · JavaScript · localStorage</p>
                     </div>
-
-
-
-                    <a href="https://github.com/Davut-Eren-Ekici/ATM--Banka-Sim-lasyonu" target="_blank" rel="noopener">
-                        🐙 GitHub Repository →
-                    </a>
-                </div>
-                <!-- Basit Market Kasa Similaysonu -->
-                <div class="project-card">
-                    <h3>🌐 Basit Market Kasa Similasyonu</h3>
-
-                    <p>
-                        Kendimi, öğrendiğim teknolojileri ve geliştirdiğim
-                        projeleri sergilemek için Java Dilini
-                        kullanarak geliştirdiğim Market Kasa Similasyonu
-                    </p>
-
-                    <div class="project-tech">
-                        Java• Git • GitHub
+                    <div class="project-links">
+                        <a href="https://davut-eren-ekici.github.io/Counter-app/" target="_blank" rel="noopener">Canlı demo →</a>
+                        <a href="https://github.com/Davut-Eren-Ekici/Counter-app" target="_blank" rel="noopener">Kaynak kod →</a>
                     </div>
-
-
-
-                    <a href="https://github.com/Davut-Eren-Ekici/Basit-Market-Kasas-----ndirim-Otomasyonu"
-                        target="_blank" rel="noopener">
-                        🐙 GitHub Repository →
-                    </a>
-                </div>
-                <!-- BKİ Hesaplayıcı (Beden Kitle index i hesaplayıcı) -->
-                <div class="project-card">
-                    <h3>🌐 BKİ Hesaplayıcı</h3>
-
-                    <p>
-                        Kendimi, öğrendiğim teknolojileri ve geliştirdiğim
-                        projeleri sergilemek için Java Dilini
-                        kullanarak geliştirdiğim BKİ Hesaplayıcı (Beden Kitle index i hesaplayıcı)
-                    </p>
-
-                    <div class="project-tech">
-                        Java• Git • GitHub
+                </li>
+                <li class="other-item">
+                    <div>
+                        <h4>Portföy sitesi</h4>
+                        <p>Şu an baktığın site. Bu sürümde yapıyı, rengi ve erişilebilirliği baştan düzenledim.</p>
+                        <p class="project-tech">HTML · CSS · JavaScript · AOS</p>
                     </div>
-
-
-
-                    <a href="https://github.com/Davut-Eren-Ekici/Beden-Kitle--ndeksi--BK---Hesaplay-c-" target="_blank"
-                        rel="noopener">
-                        🐙 GitHub Repository →
-                    </a>
-                </div>
-                <!--  Patron Asistanı - Günlük Planlayıcı -->
-                <div class="project-card">
-                    <h3>👔 Patron Asistanı - Günlük Planlayıcı</h3>
-
-                    <p>
-                        Patron Asistanı, gününüzü saat bazlı olarak planlamanıza, görevlerinizi öncelik sırasına göre
-                        organize
-                        etmenize ve günlük verimliliğinizi artırmanıza yardımcı olan modern,
-                        karanlık tema (dark mode) odaklı bir web uygulamasıdır.
-                        🛠️ Kullanılan Teknolojiler
-                        HTML5: Yapısal içerik ve semantik form bileşenleri.
-                        CSS3: Glassmorphism etkileri, Flexbox düzeni, özel dinamik kenarlıklar ve responsive tasarım.
-                        JavaScript (ES6+): DOM manipülasyonu, event listeners, dizi işlemleri ve localStorage yönetimi.
-                    </p>
-                    
-
-                    <div class="project-tech">
-                        HTML • CSS • JavaScript • Local Storage • Git • GitHub
+                    <div class="project-links">
+                        <a href="https://github.com/Davut-Eren-Ekici/portfolio" target="_blank" rel="noopener">Kaynak kod →</a>
                     </div>
+                </li>
+            </ul>
 
-                    <a href="https://davut-eren-ekici.github.io/PatronAsistani/" target="_blank" rel="noopener">
-                        🌐 Canlı Demo →
-                    </a>
-
-                    <a href="https://github.com/Davut-Eren-Ekici/PatronAsistani" target="_blank"
-                        rel="noopener">
-                        🐙 GitHub Repository →
-                    </a>
-                </div>
-                <!-- Tas-Kağıt-Makas Oyunu -->
-                <div class="project-card">
-                    <h3>🌐 Tas---Kağıt---Makas Oyunu </h3>
-
-                    <p>
-                        Kendimi, öğrendiğim teknolojileri ve geliştirdiğim
-                        projeleri sergilemek için Java Dilini
-                        kullanarak geliştirdiğim Tas-Kağıt-Makas Oyunu
-                    </p>
-
-                    <div class="project-tech">
-                        Java• Git • GitHub
+            <h3 class="subsection-title">Java çalışmaları</h3>
+            <ul class="other-list">
+                <li class="other-item">
+                    <div>
+                        <h4>ATM Banka Simülasyonu</h4>
+                        <p>ATM işleyişini taklit eden Java uygulaması.</p>
                     </div>
-
-
-
-                    <a href="https://github.com/Davut-Eren-Ekici/Tas---Kagit---Makas-Oyunu" target="_blank"
-                        rel="noopener">
-                        🐙 GitHub Repository →
-                    </a>
-                </div>
-                
-                <!-- Say--Tahmin-Oyunu -->
-                <div class="project-card">
-                    <h3>🌐 Say--Tahmin-Oyunu </h3>
-
-                    <p>
-                        Kendimi, öğrendiğim teknolojileri ve geliştirdiğim
-                        projeleri sergilemek için Java Dilini
-                        kullanarak geliştirdiğim Say--Tahmin-Oyunu
-                    </p>
-
-                    <div class="project-tech">
-                        Java• Git • GitHub
+                    <div class="project-links">
+                        <a href="https://github.com/Davut-Eren-Ekici/ATM--Banka-Sim-lasyonu" target="_blank" rel="noopener">Kaynak kod →</a>
                     </div>
-
-
-
-                    <a href="https://github.com/Davut-Eren-Ekici/Say--Tahmin-Oyunu" target="_blank"
-                        rel="noopener">
-                        🐙 GitHub Repository →
-                    </a>
-                </div>
-            </section>
-
-
-
+                </li>
+                <li class="other-item">
+                    <div>
+                        <h4>Basit Market Kasa Simülasyonu</h4>
+                        <p>Market kasasını ve indirim hesabını taklit eden Java uygulaması.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Davut-Eren-Ekici/Basit-Market-Kasas-----ndirim-Otomasyonu" target="_blank" rel="noopener">Kaynak kod →</a>
+                    </div>
+                </li>
+                <li class="other-item">
+                    <div>
+                        <h4>BKİ Hesaplayıcı</h4>
+                        <p>Beden kitle indeksini hesaplayan Java uygulaması.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Davut-Eren-Ekici/Beden-Kitle--ndeksi--BK---Hesaplay-c-" target="_blank" rel="noopener">Kaynak kod →</a>
+                    </div>
+                </li>
+                <li class="other-item">
+                    <div>
+                        <h4>Taş Kağıt Makas</h4>
+                        <p>Bilgisayara karşı oynanan Java oyunu.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Davut-Eren-Ekici/Tas---Kagit---Makas-Oyunu" target="_blank" rel="noopener">Kaynak kod →</a>
+                    </div>
+                </li>
+                <li class="other-item">
+                    <div>
+                        <h4>Sayı Tahmin Oyunu</h4>
+                        <p>Gizli sayıyı bulmaya çalıştığın Java oyunu.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Davut-Eren-Ekici/Say--Tahmin-Oyunu" target="_blank" rel="noopener">Kaynak kod →</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
 
-
-    <footer id="contact" data-aos="fade-up">
-        <h2 class="hakkimda">İletişim</h2>
+    <footer id="contact" class="footer" data-aos="fade-up">
+        <h2 class="section-title">İletişim</h2>
 
         <div class="footer-links">
             <a href="mailto:davuteren052@gmail.com">
-
-                <img src="images/gmail.png" class="icon" alt="gmail">
-
+                <img src="images/gmail.png" class="icon" alt="" width="24" height="24">
                 <span>davuteren052@gmail.com</span>
             </a>
-
             <a href="https://github.com/Davut-Eren-Ekici" target="_blank" rel="noopener">
-
-                <img src="images/github.png" class="icon" alt="GitHub">
-
+                <img src="images/github.png" class="icon" alt="" width="24" height="24">
                 <span>GitHub</span>
             </a>
-
             <a href="https://www.linkedin.com/in/eren-ekici-6808203b1/" target="_blank" rel="noopener">
-
-                <img src="images/linkedin.png" class="icon" alt="LinkedIn">
-
+                <img src="images/linkedin.png" class="icon" alt="" width="24" height="24">
                 <span>LinkedIn</span>
             </a>
         </div>
@@ -449,45 +268,17 @@
         <p class="copyright">© 2026 Davut Eren Ekici</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-
-    </script>
-    <div class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-text"></p>
-
+    <dialog id="skill-dialog" class="skill-dialog" aria-labelledby="dialog-title">
+        <div class="dialog-body">
+            <button type="button" class="dialog-close" aria-label="Kapat">&times;</button>
+            <h2 id="dialog-title"></h2>
+            <p id="dialog-level" class="dialog-level"></p>
+            <ul id="dialog-list"></ul>
         </div>
-    </div>
+    </dialog>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
-
-
-
-<script src="script.js"></script>
 
 </html>

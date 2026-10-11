@@ -1,534 +1,362 @@
-h1 {
-    margin-top: 5px;
-    color: brown;
-    font-size: 59px;
-
+/* ==========================================================
+   Değişkenler
+   Tek bir vurgu rengi (mavi), geri kalanı nötr tonlar.
+   ========================================================== */
+:root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --border: #334155;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #60a5fa;
+    --accent-strong: #2563eb;
+    --radius: 14px;
+    --font-heading: "Space Grotesk", system-ui, sans-serif;
+    --font-body: "IBM Plex Sans", system-ui, sans-serif;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
-
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
 
 body {
-    background-color: #0f172a;
-    color: white;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
 }
 
-.renk {
-    max-width: 800px;
-    margin: 25px auto;
-    padding: 25px;
-    border-radius: 20px;
-    background-color: rgb(161, 21, 124);
-    box-shadow: 0 0 30px rgb(123, 22, 255);
-    font-size: 28px;
-    color: white;
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    margin: 0;
 }
 
-.foto {
-
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-
-}
-
-.hakkimda {
-
-    text-align: center;
-    font-size: 55px;
-    color: rgb(124, 19, 150);
-}
-
-
-.renk2 {
-    margin-bottom: 30px;
-    color: rgba(93, 15, 15, 0.49);
-    font-size: 55px;
-
-}
-
-.header {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.skills {
-    width: 300px;
-    margin: auto;
-    font-size: 30px;
-    line-height: 55px;
+p {
+    margin: 0;
 }
 
 a {
-    color: #60a5fa;
+    color: var(--accent);
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+    transition: color 0.2s;
 }
 
 a:hover {
     color: #ffffff;
 }
 
-.skill-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 15px;
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
 }
 
-.skill-card {
-    width: 250px;
-    padding: 25px;
-    background: #1e293b;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
-    transition: all .35s ease;
-
-    position: relative;
-    overflow: hidden;
-
-}
-
-.skill-card::before {
-    content: "";
+.skip-link {
     position: absolute;
-    top: 0;
-    left: -120%;
-    width: 60%;
-    height: 100%;
-    background: rgba(255, 255, 255, .25);
-    transform: skewX(-25deg);
-    transition: .7s;
+    left: 16px;
+    top: -60px;
+    padding: 10px 16px;
+    background: var(--accent-strong);
+    color: #ffffff;
+    border-radius: 8px;
+    z-index: 3000;
 }
 
-.skill-card:hover::before {
-    left: 160%;
+.skip-link:focus {
+    top: 12px;
 }
 
-.skill-card:hover {
-    transform: translateY(-10px) scale(1.05) rotate(-1deg);
-    box-shadow:
-        0 0 20px rgba(96, 165, 250, .5),
-        0 0 40px rgba(96, 165, 250, .3),
-        0 0 60px rgba(96, 165, 250, .2);
-
-
-}
-
-.skill-card h3 {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    color: #60a5fa;
-
-}
-
-.skill-card p {
-    color: white;
-    font-size: 20px;
-}
-
-.project-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.project-card {
-    width: 420px;
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 18px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
-    transition: .3s;
-
-}
-
-.project-card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 10px 30px rgba(96, 165, 250, .5);
-}
-
-.project-card h3 {
-    color: #60a5fa;
-    margin-bottom: 15px;
-}
-
-.project-card p {
-    line-height: 28px;
-    margin-bottom: 20px;
-}
-
-.project-tech {
-    color: #c084fc;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.project-card a {
-    display: inline-block;
-    text-decoration: none;
-    color: #60a5fa;
-    font-weight: bold;
-}
-
-.project-card a:hover {
-    color: white;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
+/* ==========================================================
+   Navbar
+   ========================================================== */
 .navbar {
     position: sticky;
     top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding: 20px;
-    background-color: #111827;
-    z-index: 1000;
+    flex-wrap: wrap;
+    gap: 8px 32px;
+    padding: 16px 20px;
+    background: rgba(17, 24, 39, 0.95);
+    border-bottom: 1px solid var(--border);
 }
 
 .navbar a {
-    position: relative;
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-    transition: .3s;
-
+    color: var(--text);
+    font-weight: 600;
+    padding: 2px 0;
+    border-bottom: 2px solid transparent;
 }
 
 .navbar a:hover {
-    color: #60a5fa;
+    color: var(--accent);
+    border-bottom-color: var(--accent);
 }
 
-.navbar a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 0;
-    height: 4px;
-    background: red;
-    transition: width .3s;
-
+/* ==========================================================
+   Hero
+   ========================================================== */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 64px 20px 32px;
 }
 
-.navbar a:hover::after {
-    width: 100%;
+.hero-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    margin-bottom: 28px;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 8vw, 4.25rem);
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hero-role {
+    margin-top: 12px;
+    font-size: clamp(1.05rem, 2.6vw, 1.3rem);
+    color: var(--accent);
+    font-weight: 600;
 }
 
 .hero-text {
-    font-size: 24px;
-    color: #94a3b8;
-    margin-top: -20px;
-    margin-bottom: 30px;
-
+    margin-top: 12px;
+    max-width: 52ch;
+    color: var(--muted);
+    font-size: 1.125rem;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 20px;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
 }
 
 .btn {
-    background: #2563eb;
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 12px;
-    font-size: 20px;
-    font-weight: bold;
-    transition: .3s;
-
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--accent-strong);
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background 0.2s;
 }
 
 .btn:hover {
     background: #1d4ed8;
-    transform: scale(1.05);
-
+    color: #ffffff;
 }
 
 .btn-secondary {
-    background: #374151;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
 }
 
 .btn-secondary:hover {
-    background: #4b5563;
+    background: var(--surface);
+    color: #ffffff;
 }
 
-@media (max-width: 768px) {
-
-    /* =========================
-       GENEL MOBİL AYARLAR
-       ========================= */
-
-    h1 {
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .renk2 {
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .foto {
-        width: 180px;
-        height: 180px;
-    }
-
-    .renk {
-        width: 90%;
-        font-size: 20px;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    .skills {
-        width: 90%;
-        font-size: 20px;
-        box-sizing: border-box;
-    }
-
-
-    /* =========================
-       NAVBAR
-       ========================= */
-
-    .navbar {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-
-        width: 100%;
-        box-sizing: border-box;
-
-        background-color: #111827;
-
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
-        gap: 30px;
-
-        padding: 18px 20px;
-
-        overflow-x: auto;
-        white-space: nowrap;
-
-        scrollbar-width: none;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .navbar::-webkit-scrollbar {
-        display: none;
-    }
-
-    .navbar a {
-        flex-shrink: 0;
-    }
-
-
-    /* =========================
-       PROJELER
-       ========================= */
-
-    #projects {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-
-        overflow: hidden;
-    }
-
-    #projects .hakkimda {
-        text-align: center;
-    }
-
-
-    /* Projelerin yatay kaydırma alanı */
-
-    .project-container {
-        width: 100%;
-        max-width: 100%;
-
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-
-        gap: 20px;
-
-        overflow-x: auto;
-        overflow-y: hidden;
-
-        box-sizing: border-box;
-
-        padding: 10px 20px 30px;
-
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-
-        scrollbar-width: none;
-    }
-
-    .project-container::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* 
-    PROJE KARTLARI
-    */
-
-    .project-card {
-        flex: 0 0 calc(100vw - 40px);
-
-        width: calc(100vw - 40px);
-        min-width: calc(100vw - 40px);
-        max-width: calc(100vw - 40px);
-
-        box-sizing: border-box;
-
-        padding: 25px 20px;
-
-        scroll-snap-align: center;
-
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-    }
-
-
-    /* Başlık */
-
-    .project-card h3 {
-        font-size: 21px;
-        line-height: 1.3;
-
-        margin-bottom: 15px;
-
-        word-break: normal;
-    }
-
-
-    /* Açıklama */
-
-    .project-card p {
-        font-size: 15px;
-        line-height: 1.6;
-
-        margin-bottom: 15px;
-    }
-
-
-    /* Teknolojiler */
-
-    .project-tech {
-        font-size: 13px;
-        line-height: 1.6;
-
-        margin: 15px 0;
-
-        overflow-wrap: break-word;
-    }
-
-
-    /* Butonlar / Linkler */
-
-    .project-card a {
-        display: block;
-
-        width: 100%;
-
-        box-sizing: border-box;
-
-        margin-top: 10px;
-
-        padding: 11px;
-
-        text-align: center;
-    }
-
-
-    /* =========================
-       KÜÇÜK TELEFONLAR
-       ========================= */
-
-    @media (max-width: 400px) {
-
-        h1 {
-            font-size: 34px;
-        }
-
-        .renk2 {
-            font-size: 26px;
-        }
-
-        .foto {
-            width: 150px;
-            height: 150px;
-        }
-
-        .project-card {
-            flex: 0 0 calc(100vw - 30px);
-
-            width: calc(100vw - 30px);
-            min-width: calc(100vw - 30px);
-            max-width: calc(100vw - 30px);
-
-            padding: 20px 16px;
-        }
-
-        .project-card h3 {
-            font-size: 19px;
-        }
-
-        .project-card p {
-            font-size: 14px;
-        }
-
-        .project-tech {
-            font-size: 12px;
-        }
-    }
-
+/* ==========================================================
+   Bölümler
+   ========================================================== */
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 20px;
 }
 
-
-
-.icon {
-    width: 28px;
-    height: 28px;
-    vertical-align: middle;
-    margin-right: 10px;
+.section-title {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    color: #ffffff;
+    margin-bottom: 24px;
 }
 
-footer {
-    margin-top: 100px;
-    padding: 50px 20px;
+.section-note {
+    color: var(--muted);
+    margin: -12px 0 24px;
+    font-size: 0.95rem;
+}
+
+.subsection-title {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin: 48px 0 8px;
+}
+
+.about-text {
+    max-width: 65ch;
+    color: var(--text);
+}
+
+.about-text + .about-text {
+    margin-top: 16px;
+}
+
+/* ==========================================================
+   Teknolojiler
+   ========================================================== */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 20px 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font: inherit;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.skill:hover {
+    border-color: var(--accent);
+    background: #243349;
+}
+
+.skill-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.skill-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.skill-level {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+/* ==========================================================
+   Projeler
+   ========================================================== */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 28px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: border-color 0.2s;
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+}
+
+.project-card h3 {
+    font-size: 1.35rem;
+    color: #ffffff;
+}
+
+.project-tech {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    font-weight: 600;
+}
+
+.project-card .project-links {
+    margin-top: auto;
+}
+
+.other-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.other-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 12px 32px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.other-item h4 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.other-item p {
+    color: var(--text);
+}
+
+.other-item .project-tech {
+    margin-top: 4px;
+}
+
+/* ==========================================================
+   İletişim / alt bilgi
+   ========================================================== */
+.footer {
+    margin-top: 48px;
+    padding: 56px 20px 40px;
     background: #111827;
-    border-top: 2px solid #2563eb;
+    border-top: 1px solid var(--border);
     text-align: center;
+}
+
+.footer .section-title {
+    margin-bottom: 28px;
 }
 
 .footer-links {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
     flex-wrap: wrap;
-    margin: 40px 0;
+    justify-content: center;
+    gap: 16px;
 }
 
 .footer-links a {
@@ -536,82 +364,125 @@ footer {
     align-items: center;
     gap: 10px;
     padding: 12px 20px;
-    background: #1e293b;
-    border-radius: 12px;
-    transition: .3s;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-weight: 600;
+    transition: border-color 0.2s;
 }
 
 .footer-links a:hover {
-    background: #2563eb;
-    transform: translateY(-5px);
+    border-color: var(--accent);
+    color: #ffffff;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .copyright {
-    color: #94a3b8;
-    margin-top: 30px;
+    margin-top: 36px;
+    color: var(--muted);
+    font-size: 0.9rem;
 }
 
-.skill-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    vertical-align: middle;
-    transition: .3s;
+/* ==========================================================
+   Beceri penceresi (dialog)
+   ========================================================== */
+.skill-dialog {
+    width: min(480px, 90vw);
+    padding: 0;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
 }
 
-.skill-card:hover .skill-logo {
-    transform: rotate(10deg) scale(1.15);
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+.skill-dialog::backdrop {
     background: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
 }
 
-.modal-content {
-    width: 500px;
-    max-width: 90%;
-    background: #1e293b;
-    color: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, .5);
+.dialog-body {
     position: relative;
+    padding: 28px;
 }
 
-.close {
+.dialog-body h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding-right: 40px;
+}
+
+.dialog-level {
+    margin-top: 6px;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.dialog-body ul {
+    margin: 16px 0 0;
+    padding-left: 22px;
+}
+
+.dialog-body li {
+    margin: 8px 0;
+    color: var(--text);
+}
+
+.dialog-close {
     position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 32px;
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 1.75rem;
+    line-height: 1;
     cursor: pointer;
-    color: white;
-
 }
 
-.close:hover {
-    color: #60a5fa;
+.dialog-close:hover {
+    color: var(--accent);
 }
 
-.modal-content ul {
-    text-align: left;
-    padding-left: 25px;
+/* ==========================================================
+   Küçük ekranlar
+   ========================================================== */
+@media (max-width: 640px) {
+    .hero {
+        padding-top: 40px;
+    }
+
+    .hero-photo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .section {
+        padding: 48px 20px;
+    }
+
+    .other-item {
+        grid-template-columns: 1fr;
+    }
 }
 
-.modal-content li {
-    margin: 10px 0;
-    color: #cbd5e1;
-}
+/* ==========================================================
+   Hareketi azalt: kullanıcı isterse tüm geçişler kapanır
+   ========================================================== */
+@media (prefers-reduced-motion: reduce) {
 
-.modal-content strong {
-    color: #60a5fa;
-    font-size: 20px;
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+        scroll-behavior: auto !important;
+    }
 }
