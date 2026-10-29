@@ -3,54 +3,46 @@
 const skills = {
     html: {
         title: "HTML",
-        level: "İyi",
-        items: ["Semantik HTML", "Formlar", "Tablolar", "Responsive tasarım", "SEO temelleri"]
+        items: ["Semantik HTML", "Formlar", "Tablolar", "Responsive tasarım", "SEO temelleri","Vs"]
     },
     css: {
         title: "CSS",
-        level: "İyi",
-        items: ["Flexbox", "Grid sistemi", "Responsive tasarım", "Animasyonlar", "Geçiş efektleri (transitions)"]
+        items: ["Flexbox", "Grid sistemi", "Responsive tasarım", "Animasyonlar", "Geçiş efektleri (transitions)","Vs"]
     },
     javascript: {
         title: "JavaScript",
-        level: "Öğreniyorum",
         items: [
             "Değişkenler (let, const)",
             "Fonksiyonlar",
             "DOM manipülasyonu",
             "addEventListener",
-            "textContent ve innerHTML"
+            "textContent ve innerHTML",
+            "Vs"
         ]
     },
     csharp: {
         title: "C#",
-        level: "İyi",
-        items: ["Windows Forms", "Değişkenler", "Koşullar (if-else)", "Döngüler (for, while)", "Metotlar"]
+        items: ["Windows Forms", "Değişkenler", "Koşullar (if-else)", "Döngüler (for, while)", "Metotlar","Vs"]
     },
     sql: {
         title: "SQL Server",
-        level: "İyi",
-        items: ["SELECT", "INSERT", "UPDATE", "DELETE", "WHERE"]
+        items: ["SELECT", "INSERT", "UPDATE", "DELETE", "WHERE","Vs"]
     },
     java: {
         title: "Java",
-        level: "Öğreniyorum",
-        items: ["For / While", "Diziler (arrays)", "Koşullar (if-else)", "Veri tipleri"]
+        items: ["For / While", "Diziler (arrays)", "Koşullar (if-else)", "Veri tipleri","Vs"]
     },
     python: {
         title: "Python",
-        level: "Öğreniyorum",
-        items: ["Değişkenler", "Koşullar (if-else)", "Döngüler", "Fonksiyonlar", "Temel veri tipleri"]
+        items: ["Değişkenler", "Koşullar (if-else)", "Döngüler", "Fonksiyonlar", "Temel veri tipleri","Vs"]
     },
     git: {
         title: "Git",
-        level: "Orta",
-        items: ["git init", "git add", "git commit", "git status", "git push", "git config"]
+        items: ["git init", "git add", "git commit", "git status", "git push", "git config","Vs"]
     },
     github: {
         title: "GitHub",
-        level: "Orta",
-        items: ["Repository yönetimi", "Commit geçmişi", "Push ve pull", "README hazırlama", "GitHub Pages"]
+        items: ["Repository yönetimi", "Commit geçmişi", "Push ve pull", "README hazırlama", "GitHub Pages","Vs"]
     }
 };
 
@@ -65,7 +57,7 @@ function openSkill(key) {
     if (!skill) return;
 
     dialogTitle.textContent = skill.title;
-    dialogLevel.textContent = "Seviye: " + skill.level;
+    
 
     // innerHTML yerine textContent kullanıyoruz, böylece metin her zaman güvenli kalır.
     dialogList.replaceChildren(
