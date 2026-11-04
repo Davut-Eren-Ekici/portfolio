@@ -68,4 +68,13 @@ portfolio/
     ├── gmail.png
     ├── github.png
     └── linkedin.png
+    ├── csharp.svg
+    ├── css3.svg
+    └── html5.svg
+    ├── java.png
+    ├── javascript.png
+    └── python.svg
+    ├── ŞahsiFotoğraf.png
+    ├── SQL.svg
+    └── git.svg
     
