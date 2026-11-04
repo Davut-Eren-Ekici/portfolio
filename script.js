@@ -3,11 +3,11 @@
 const skills = {
     html: {
         title: "HTML",
-        items: ["Semantik HTML", "Formlar", "Tablolar", "Responsive tasarım", "SEO temelleri","Vs"]
+        items: ["Semantik HTML", "Formlar", "Tablolar", "Responsive tasarım", "SEO temelleri", "Vs"]
     },
     css: {
         title: "CSS",
-        items: ["Flexbox", "Grid sistemi", "Responsive tasarım", "Animasyonlar", "Geçiş efektleri (transitions)","Vs"]
+        items: ["Flexbox", "Grid sistemi", "Responsive tasarım", "Animasyonlar", "Geçiş efektleri (transitions)", "Vs"]
     },
     javascript: {
         title: "JavaScript",
@@ -22,27 +22,27 @@ const skills = {
     },
     csharp: {
         title: "C#",
-        items: ["Windows Forms", "Değişkenler", "Koşullar (if-else)", "Döngüler (for, while)", "Metotlar","Vs"]
+        items: ["Windows Forms", "Değişkenler", "Koşullar (if-else)", "Döngüler (for, while)", "Metotlar", "Vs"]
     },
     sql: {
         title: "SQL Server",
-        items: ["SELECT", "INSERT", "UPDATE", "DELETE", "WHERE","Vs"]
+        items: ["SELECT", "INSERT", "UPDATE", "DELETE", "WHERE", "Vs"]
     },
     java: {
         title: "Java",
-        items: ["For / While", "Diziler (arrays)", "Koşullar (if-else)", "Veri tipleri","Vs"]
+        items: ["For / While", "Diziler (arrays)", "Koşullar (if-else)", "Veri tipleri", "Vs"]
     },
     python: {
         title: "Python",
-        items: ["Değişkenler", "Koşullar (if-else)", "Döngüler", "Fonksiyonlar", "Temel veri tipleri","Vs"]
+        items: ["Değişkenler", "Koşullar (if-else)", "Döngüler", "Fonksiyonlar", "Temel veri tipleri", "Vs"]
     },
     git: {
         title: "Git",
-        items: ["git init", "git add", "git commit", "git status", "git push", "git config","Vs"]
+        items: ["git init", "git add", "git commit", "git status", "git push", "git config", "Vs"]
     },
     github: {
         title: "GitHub",
-        items: ["Repository yönetimi", "Commit geçmişi", "Push ve pull", "README hazırlama", "GitHub Pages","Vs"]
+        items: ["Repository yönetimi", "Commit geçmişi", "Push ve pull", "README hazırlama", "GitHub Pages", "Vs"]
     }
 };
 
@@ -57,7 +57,7 @@ function openSkill(key) {
     if (!skill) return;
 
     dialogTitle.textContent = skill.title;
-    
+
 
     // innerHTML yerine textContent kullanıyoruz, böylece metin her zaman güvenli kalır.
     dialogList.replaceChildren(
