@@ -213,7 +213,7 @@ button:focus-visible {
     color: var(--text);
 }
 
-.about-text + .about-text {
+.about-text+.about-text {
     margin-top: 16px;
 }
 
